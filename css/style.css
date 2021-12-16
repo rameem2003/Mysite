@@ -1,0 +1,276 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.title{
+    font-weight: 900;
+}
+
+/* Header */
+header{
+    background-color: black;
+}
+header .logo{
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+}
+
+header ul li a{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* Header End*/
+
+/* Banner */
+.banner{
+    margin-top: 92px;
+    background-image: url(../img/Banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 160px 0;
+    background-attachment: fixed;
+}
+
+.banner h1{
+    font-size: 70px;
+    font-weight: 800;
+}
+.banner p{
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.banner button{
+    font-weight: bolder;
+}
+/* Banner End */
+
+
+/* About */
+.about, .inspiration, .services{
+    background-color: #030244;
+}
+.about .imege-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .bk{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 5px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.about img{
+    width: 250px;
+    height: 250px;
+}
+
+.about .bk:hover{
+    border: 8px solid yellow;
+}
+
+.about .name{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.about .link li{
+    background-color: #00FFFF;
+    margin: 0 14px;
+    border-radius: 50%;
+    display: block;
+}
+.about .link a{
+    font-size: 23px;
+    display: block;
+}
+
+/* About End */
+
+
+/* My inspiration */
+.inspiration .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+    height: 200px;
+    border: 3px solid white;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.inspiration .box:hover{
+    background-color: #2320c4;
+}
+.inspiration .box .imege{
+    width: 40%;
+}
+.inspiration .box .inner{
+    height: 140px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border-radius: 50%;
+    margin: 20px;
+}
+.inspiration .box .description{
+    width: 60%;
+}
+.inspiration .box .inner img{
+    max-width: 80%;
+}
+/* My inspiration End */
+
+/* My service */
+.services .box{
+    background-color: #F2F8F9;
+    border-radius: 8px;
+    position: relative;
+    transition: 0.5s ease;
+}
+
+.services .box span{
+    margin: 0 auto;
+    width: 107px;
+    height: 107px;
+    border-radius: 50%;
+    background-color: #00f3ff;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.services .box span i{
+    font-size: 80px;
+}
+.services .box h1,i,p{
+    color: black;
+    transition: 0.5s ease;
+}
+
+.services .box::before{
+    content: "";
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 0 4px 0 32px;
+    position: absolute;
+    transition: 0.5s ease;
+}
+
+.services .box:hover::before{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.services .box:hover h1{
+    color: white;
+}
+.services .box:hover p{
+    color: white;
+}
+
+/* My service end */
+
+
+/* Contact */
+.contact{
+    background-color: black;
+}
+.contact h1{
+    font-size: 28px;
+    font-weight: 800;
+}
+/* Contact end */
+
+/* Footer */
+footer{
+    background-color: black;
+}
+
+footer p{
+    margin: 0 auto;
+}
+/* Footer end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:390px) {
+    .about .link ul{
+        text-align: center;
+    }
+
+    .about .btn-box a{
+        display: block;
+        margin: 10px 0;
+    }
+
+
+
+
+    
+    .inspiration .box{
+        width: auto;
+        height: 280px;
+        display: block;
+        text-align: center;
+    }
+    .inspiration .box .imege{
+        width: 100%;
+        display: block;
+        margin: 20px 0;
+    }
+
+    .inspiration .box .imege .inner{
+        margin: 0 auto;
+    }
+    .inspiration .box .description{
+        width: 100%;
+        display: block;
+    }
+}
+
