@@ -1,7 +1,6 @@
 # My Website
 ## By Mahmood Hassan Rameem
-## __Styding Diploma Engineering__
-
+## _Styding Diploma Engineering_
 ---
 
 ### Website rameem2003.github.io/Mysite
